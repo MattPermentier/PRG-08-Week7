@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="predict.js" type="module"></script>
+    <title>ML5 Neural Network Regression</title>
+  </head>
+
+  <body>
+    <div>
+      <h2>ML5 Neural Network Regression Inladen</h2>
+    </div>
+
+    <form id="inputFields" action="">
+      <label>Fixed Acidaty:</label>
+      <input type="text" value="" id="fixed" />
+
+      <label>Volatile Acidity:</label>
+      <input type="text" value="" id="volatile" />
+
+      <label>Citric Acit:</label>
+      <input type="text" value="" id="citric" />
+
+      <label>Chlorides:</label>
+      <input type="text" value="" id="chlorides" />
+
+      <label>sulfur:</label>
+      <input type="text" value="" id="sulfur" />
+
+      <label>sulphates:</label>
+      <input type="text" value="" id="sulphates" />
+
+      <label>Total sulfur dioxide:</label>
+      <input type="text" value="" id="totalSulfer" />
+
+      <label>Alcohol:</label>
+      <input type="text" value="" id="alcohol" />
+    </form>
+
+    <button id="predict">Predict</button>
+    <h2 id="result"></h2>
+  </body>
+</html>
