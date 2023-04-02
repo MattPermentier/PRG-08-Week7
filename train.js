@@ -18,17 +18,6 @@ function prepareData(data) {
   for (let row of trainData) {
     nn.addData(
       {
-        fixed: row.fixedAcidity,
-        volatile: row.volatileAcidity,
-        citric: row.citricAcid,
-      },
-      { quality: row.quality }
-    );
-  }
-
-  for (let row of trainData) {
-    nn.addData(
-      {
         fixed: row["fixedAcidity"],
         volatile: row["volatileAcidity"],
         citric: row["citricAcid"],
