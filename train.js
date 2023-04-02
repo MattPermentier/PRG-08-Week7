@@ -32,7 +32,7 @@ function prepareData(data) {
   }
 
   nn.normalizeData();
-  nn.train({ epochs: 5 });
+  nn.train({ epochs: 10 });
 
   let saveBtn = document.getElementById("saveBtn");
   saveBtn.addEventListener("click", () => saveModel(nn));
